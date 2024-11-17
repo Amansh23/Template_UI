@@ -49,7 +49,7 @@
 .Home_main_container {
   width: 100%;
   height: 90vh;
-  background-color: orange;
+  background-color: #f0fb96;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,80 +111,78 @@
   position: relative;
 }
 
-.Home_right_background{
+.Home_right_background {
   padding: 100px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.Home_right_helex{
+.Home_right_helex {
   position: absolute;
   height: 100px;
   bottom: 8%;
   right: 12%;
-   animation: RotateAnimate 25s ease-in-out infinite ;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-.Home_right_tube{
+.Home_right_tube {
   position: absolute;
   height: 100px;
   top: 5%;
   left: 8%;
-   animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-.Home_right_triangle{
+.Home_right_triangle {
   position: absolute;
   height: 80px;
   top: 15%;
   left: 34%;
   /* background-color: red; */
-   animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-
-.Home_right_donut{
+.Home_right_donut {
   position: absolute;
   height: 80px;
   bottom: 15%;
   left: 20%;
   /* background-color: red; */
-   animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-.Home_right_cylinder{
+.Home_right_cylinder {
   position: absolute;
   height: 50px;
   top: 45%;
   left: 34%;
   /* background-color: red; */
-   animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-.Home_right_Cube{
+.Home_right_Cube {
   position: absolute;
   height: 75px;
   top: 55%;
   right: 32%;
   /* background-color: red; */
-   animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
-.Home_right_donut2{
-    position: absolute;
+.Home_right_donut2 {
+  position: absolute;
   height: 100px;
   top: 15%;
   right: 20%;
- animation: RotateAnimate 25s ease-in-out infinite;
+  animation: RotateAnimate 25s ease-in-out infinite;
 }
 
 .Home_right_sphere {
   position: absolute;
   height: 55px;
   top: 32%;
-  right: 35%;  
- 
+  right: 35%;
 }
 
 @keyframes RotateAnimate {
@@ -575,4 +573,88 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+/* ------------------------------------------------------------------------------- MEDIA */
+
+@media screen and (max-width: 992px) {
+  .Home_main_container {
+    /* flex-direction: column; */
+  }
+
+  .Home_left_container > h3 {
+    font-size: 14px;
+  }
+  .Home_left_container > h1 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .Home_left_button {
+    width: 50%;
+  }
+  .Home_right_container{
+    height: 78%;
+  }
+
+  .Home_right_background{
+    padding: 80px;
+  }
+
+  .Home_right_helex{
+    height: 80px;
+  }
+  .Home_right_tube{
+    height: 80px;
+  }
+  .Home_right_triangle{
+    height: 50px;
+    top: 22%;
+  }
+  .Home_right_donut{
+    height: 70px;
+  }
+  .Home_right_Cube{
+    height: 60px;
+  }
+  .Home_right_donut2{
+    height: 80px;
+  }
+  .Home_right_sphere{
+    height: 45px;
+  }
+  .About_main_container > h1{
+    font-size: 22px;
+  }
+  .About_boxes{
+    width: 40%;
+  }
+  .About_boxes > h4{
+    font-size: 12px;
+  }
+  .About_boxes > p{
+    font-size: 12px;
+  }
+  .About_main_container{
+    padding: 10px;
+  }
+
+  .Portfolio_main_container{
+    height: initial;
+  }
+
+  .Form_main_container{
+    flex-direction: column;
+    height: initial;
+  }
+
+  .Form_main_left{
+    width: 100%;
+  }
+  .Form_main_right{
+    width: 100%;
+  }
+  .Footer_main_Left{
+    padding: 0px;
+  }
 }
