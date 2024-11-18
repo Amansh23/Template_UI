@@ -13,12 +13,12 @@ const Overview = () => {
         <div className="Overview_right_container_child">
           <div className="Overview_right_container_child_left_div"></div>
           <div className="Overview_right_container_child_right_div">
-            <span>01</span>
+            <p className="Overview_right_container_child_right_div_span">01</p>
             <div className="Overview_right_container_child_right_content_div">
               <h3>UX/UI Design</h3>
               <p>
                 We design seamless, engaging digital journeys that keep users
-                connected and delighted
+                connected and delighted.
               </p>
             </div>
           </div>
