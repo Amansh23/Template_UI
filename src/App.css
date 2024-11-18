@@ -855,3 +855,20 @@
     padding: 0px;
   }
 }
+
+
+
+@media screen and (max-width: 600px){
+ .Home_main_container{
+  flex-direction: column;
+  align-items: flex-start;
+ } 
+
+ .Home_left_container{
+  width: 100%;
+ }
+
+ .Home_right_container{
+  width: 100%;
+ }
+}
