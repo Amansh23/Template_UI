@@ -17,6 +17,11 @@ const Nav = () => {
         <Link className="Nav_right_Links">Portfolio</Link>
         <Link className="Nav_right_Links">Contact</Link>
       </div>
+      <div className="Nav_menu_container">
+        <span>
+          <i class="bi bi-list"></i>
+        </span>
+      </div>
     </div>
   );
 }

@@ -44,6 +44,16 @@
   text-transform: uppercase;
 }
 
+.Nav_menu_container {
+  display: none;
+}
+
+.Nav_menu_container > span {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: rgb(35, 65, 58);
+}
 /* ----------------------------------------------------------------------Home */
 
 .Home_main_container {
@@ -484,7 +494,6 @@
   position: relative;
   top: 0;
   width: 100%;
-  background: red;
   z-index: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -856,19 +865,121 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .Home_main_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .Home_left_container {
+    width: 100%;
+  }
 
-@media screen and (max-width: 600px){
- .Home_main_container{
+  .Home_right_container {
+    width: 100%;
+  }
+
+  .Nav_main_container {
+    padding: 10px;
+  }
+  .Nav_right_container {
+    display: none;
+  }
+
+  .Nav_menu_container {
+    display: initial;
+    padding: 10px;
+  }
+
+  .Nav_menu_container > span {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .About_main_container{
+    flex-direction: column;
+    height: initial;
+  }
+
+  .About_boxes{
+    width: 100%;
+  }
+
+  .About_main_container > h1{
+    font-size: 46px;
+  }
+.Overview_main_container{
   flex-direction: column;
-  align-items: flex-start;
- } 
+  height: initial;
+}
 
- .Home_left_container{
-  width: 100%;
- }
 
- .Home_right_container{
+.Overview_left_container{
   width: 100%;
- }
+  height: initial;
+}
+
+.Overview_right_container{
+  width: 100%;
+}
+
+.Overview_right_container_child_right_content_div > p{
+  width: auto;
+}
+
+.Overview_right_container_child_left_div{
+  width: 100%;
+  height: 40vh;
+}
+.Overview_right_container_child{
+  flex-direction: column;
+  height: initial;
+}
+
+.Overview_right_container_child_right_div{
+  width: 100%;
+}
+.Portfolio_main_container > h1{
+  font-size: 56px;
+}
+
+.Form_main_left{
+  padding: 20px;
+}
+
+.Form_main_left_upper > h1{
+  font-size: 46px;
+  line-height: 50px;
+}
+
+.Form_main_right_input_maindiv{
+  flex-direction: column;
+}
+.Form_main_right_input_div{
+width: 100%;
+}
+.Form_main_right_input{
+  margin-top: 12px;
+}
+
+.Footer_main_container{
+  flex-direction: column;
+  height: initial;
+}
+.Footer_main_Left{
+  width: 50%;
+  border-right: none;
+}
+.Footer_main_right{
+width: 100%;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.Footer_main_right_left_div{
+  width: 100%;
+}
+.Footer_main_right_section{
+  margin-top: 20px;
+}
 }
